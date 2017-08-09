@@ -1,4 +1,4 @@
-var alphabet=['a','b'];
+var alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 // var alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var numGuess=  15;  //number of guesses
 var userGuessed=[]; //letters user guessed
@@ -28,6 +28,8 @@ document.onkeyup = function(event) {
 		userGuessed.push(userGuess);
 		document.getElementById("userGuessed").innerHTML=(userGuessed);
 		(winCounter+=1);
+		alert("You win!");
+		reset.resetGame();
 
 		// document.getElementById("userGuessed").innerHTML=(userGuessed.length);
 		
@@ -47,19 +49,14 @@ document.onkeyup = function(event) {
 		alert("You lose!");
 		reset.resetGame();
 		loseCounter+=1;
-		userGuessed=[];
-
-	
 	};
 }
 
 
 var reset = {
 	resetGame: function() {
-		if(numGuess==0) {
 			document.onekeyup=false;
 			numGuess=15;
 			userGuessed=[];
 		}
-	}
 }
