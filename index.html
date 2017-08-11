@@ -1,96 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Psyhic Game</title>
-<!-- Latest compiled and minified CSS -->
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-<link type="text/javascript" src="assets/javascript/game.js">
-
-</head>
-
-
-
- 	 <div class="header-container">
-  		<div class="video-container">
-  			<video preload = "true" autoplay="autoplay" loop="loop" volume="mute">
-
-  				<source src ="assets/video/visual.mp4" type = "video/mp4">
-  					<source src = "assets/video/visual.webm" type="video/webm">
-  						<source src = "assets/video/visual/visual.ogv" type="video/ogg">
-
-  		    </video><!-- end of video tag-->
-  	    </div>
-             	<h3 class="title-text" style="color: #ffffff"> TEST YOUR PSYCHIC POWERS </h3>
-     </div> <!-- end of header tag-->
-
-<body id="body" class="clearfix"> 
-<script src="assets/javascript/game.js"> 
-
-
-</script>
-<div id="wrap">
-		<div class="container"> 
-			<div class="row">
-				<div class="col-lg-8"> 
-					<h1 class="title-psychicGame">Psychic Game</h1>
-
-				<div class="row">
-					<div class="col-lg-8">
-						<h2 class="wins premade">Wins:</h2>
-						<h3 id="winCounter" class="scorecolor"></h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-8">
-						<h2 class="losses premade">Losses:</h2>
-						<h3 id="loseCounter" class="scorecolor"></h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-8">
-						<h2 class="guesses premade">Guesses Left:</h2>
-						<h3 id="numGuess" class="scorecolor"></h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-8">
-						<h2 class="lettersNow premade">Letters guessed so far:</h2>
-						<h3 id="userGuessed" class="scorecolor"></h3>
-					</div>
-				</div>
-			</div>
-
-					<div class="col-lg-4">
-        		    
-         				      <h3 class="paneltitle">How to Play</h3>
-         		         </div>
-         		     	<div class="row">
-         		     		
-         		     			<p class="howtoplay	"> Want to test your ability to read minds? Channel your inner psychique and boost your mind powers with the Psychic Game! Press any button to  start guessing! Use your keyboard to guess the letters from "a-z". Each letter that you guess correct will reward you with a win and will not deduct any guess points from you. Once you have used up all your gusses you lose. Becareful, you have a limited amount of guesses!</p>
-         		     		
-         		     	</div>
-         		     </div>
-         		   </div>
-      
-			</div>
-		</div>
-
-	
- 	
-
-
-
-
-
+   <head>
+      <title>Psyhic Game</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+      <link type="text/javascript" src="assets/javascript/game.js">
+   </head>
+   <div class="header-container">
+      <div class="video-container">
+         <video preload = "true" autoplay="autoplay" loop="loop" volume="mute">
+            <source src ="assets/video/visual.mp4" type = "video/mp4">
+            <source src = "assets/video/visual.webm" type="video/webm">
+            <source src = "assets/video/visual/visual.ogv" type="video/ogg">
+         </video>
+         <!-- end of video tag-->
+      </div>
+      <h3 class="title-text" style="color: #ffffff"> TEST YOUR PSYCHIC POWERS </h3>
+   </div>
+   <!-- end of header tag-->
+   <body id="body" class="clearfix">
+      <script src="assets/javascript/game.js"> </script>
+      <div id="wrap">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8">
+                  <h1 class="title-psychicGame">Psychic Game</h1>
+                  <div class="row">
+                     <div class="col-lg-8">
+                        <h2 class="wins premade">Wins:</h2>
+                        <h3 id="winCounter" class="scorecolor"></h3>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-8">
+                        <h2 class="losses premade">Losses:</h2>
+                        <h3 id="loseCounter" class="scorecolor"></h3>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-8">
+                        <h2 class="guesses premade">Guesses Left:</h2>
+                        <h3 id="numGuess" class="scorecolor"></h3>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-8">
+                        <h2 class="lettersNow premade">Letters guessed so far:</h2>
+                        <h3 id="userGuessed" class="scorecolor"></h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <h3 class="paneltitle">How to Play</h3>
+               </div>
+               <div class="row">
+                  <p class="howtoplay"> Want to test your ability to read minds? Channel your inner psychique and boost your mind powers with the Psychic Game! Press any button to  start guessing! Use your keyboard to guess the letters from "a-z". Each letter that you guess correct will reward you with a win and will not deduct any guess points from you. Once you have used up all your gusses you lose. Becareful, you have a limited amount of guesses!</p>
+               </div>
+            </div>
          </div>
-</div>
-
-</body>
-	 
-			
-		
-
+      </div>
+   </body>
 </html>
